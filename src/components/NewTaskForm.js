@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function NewTaskForm({ categories, onTaskFormSubmit }) {
   const [formData, setFormData] = useState({
     text: "",
-    category: categories[0], // Set the default category
+    category: categories[0], 
   });
 
   const handleInputChange = (event) => {
@@ -14,7 +14,7 @@ function NewTaskForm({ categories, onTaskFormSubmit }) {
   const handleSubmit = (event) => {
     event.preventDefault();
     onTaskFormSubmit(formData);
-    // Reset the form after submission
+    
     setFormData({ text: "", category: categories[0] });
   };
 

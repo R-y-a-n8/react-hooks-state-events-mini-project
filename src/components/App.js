@@ -8,8 +8,7 @@ function App() {
   const [tasks, setTasks] = useState(TASKS);
 
   const handleCategorySelect = (category) => {
-    // Logic for filtering tasks based on category
-    // ...
+  
   };
 
   const handleTaskFormSubmit = (formData) => {
